@@ -13,7 +13,7 @@
         android:layout_alignParentEnd="true" />
 
     <Button
-        android:id="@+id/button1"
+        android:id="@+id/button"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignLeft="@+id/main_input"
@@ -21,5 +21,30 @@
         android:layout_marginTop="31dp"
         android:onClick="onClick"
         android:text="Start" />
+
+    <RadioGroup
+        android:id="@+id/orientation"
+        android:layout_below="@id/button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp">
+
+        <RadioButton
+            android:id="@+id/horizontal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Horizontal" >
+        </RadioButton>
+
+        <RadioButton
+            android:id="@+id/vertical"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:checked="true"
+            android:text="Vertical" >
+        </RadioButton>
+
+    </RadioGroup>
+
 
 </RelativeLayout>
